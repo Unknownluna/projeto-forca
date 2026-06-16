@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca - JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🟨 Jogo da Forca - JavaScript</h1>
+        
+        <div class="game-area">
+            <!-- Status do jogo -->
+            <div class="status">
+                <p>Tentativas: <span id="tentativas">0</span> / <span id="maxTentativas">6</span></p>
+                <p>Letras erradas: <span id="letrasErradas"></span></p>
+            </div>
+            
+            <!-- Palavra oculta -->
+            <div class="palavra" id="palavra"></div>
+            
+            <!-- Teclado virtual -->
+            <div class="teclado" id="teclado"></div>
+            
+            <!-- Resultado -->
+            <div id="resultado" class="resultado" style="display:none;"></div>
+            
+            <!-- Botão reiniciar -->
+            <button id="btnReiniciar" class="btn-reiniciar" style="display:none;">🔄 Novo Jogo</button>
+        </div>
+    </div>
+    
+    <script src="jogo.js"></script>
+</body>
+</html>

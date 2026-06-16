@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.game-area {
+    text-align: center;
+}
+
+.status {
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.status p {
+    margin: 5px 0;
+}
+
+.palavra {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.letra {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    background: #f8f8f8;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-bottom: 3px solid #f5576c;
+    min-width: 50px;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin: 2rem 0;
+}
+
+.tecla {
+    padding: 12px 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tecla:hover:not(:disabled) {
+    background: #667eea;
+    color: white;
+    transform: scale(1.05);
+}
+
+.tecla:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.resultado {
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.resultado.VITORIA {
+    background: #d4edda;
+    color: #155724;
+}
+
+.resultado.DERROTA {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.btn-reiniciar {
+    padding: 12px 30px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-reiniciar:hover {
+    transform: scale(1.05);
+    background: #218838;
+}
